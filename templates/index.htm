@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuocKhanhCV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js')}}"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar ">
+        <div class="inner-width">
+            <a href="/" class="logo"></a>
+            <button class="menu-toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="navbar-menu ">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#education">Education</a>
+                <a href="#work">Works</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- home -->
+    <section id="home">
+        <div class="inner-width">
+            <div class="content">
+                <h1>Welcome to{{session.username}} visit my website!!</h1>
+                <div class="sm">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-telegram"></a>
+                    <a href="#" class="fab fa-linkedin-in"></a>
+                    <a href="#" class="fab fa-youtube"></a>
+                </div>
+                <div class="buttons">
+                    <a href="#contact">Contact me</a>
+                    <a href="{{ url_for('logout') }}">Sign Out</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about -->
+    <section id="about">
+        <div class="inner-width">
+            <h1 class="section-title">About</h1>
+            <div class="about-content">
+                <img src="{{url_for('static',filename ='images/cat.jpg')}}" alt="" class="about-pic">
+                <div class="about-text">
+                    <h2>Hi, I'm Quoc Khanh!</h2>
+                    <h3>
+                        <span>Developer</span>
+                        <span>Gamer</span>
+                        <span>Student</span>
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod esse maxime, ratione illo odit
+                        praesentium asperiores aspernatur. Sit, blanditiis velit reiciendis laudantium magni facilis
+                        debitis non incidunt eos explicabo enim?</p>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>HTML</span>
+
+                    </div>
+                    <div class="skill-bar html"></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>MicroSoft Office</span>
+
+                    </div>
+                    <div class="skill-bar microsoft"></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>CSS</span>
+
+                    </div>
+                    <div class="skill-bar css"></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+
+                    </div>
+                    <div class="skill-bar js"></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>ReactJS</span>
+
+                    </div>
+                    <div class="skill-bar reactjs"></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>MySQL</span>
+
+                    </div>
+                    <div class="skill-bar mysql"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service -->
+    <section id="services" class="dark">
+        <div class="inner-width">
+            <h1 class="section-title">Services</h1>
+            <div class="services">
+                <div class="service">
+                    <i class="icon fas fa-paint-brush"></i>
+                    <h4>Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+
+                <div class="service">
+                    <i class="icon fas fa-paint-brush"></i>
+                    <h4>Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+
+                <div class="service">
+                    <i class="icon fas fa-paint-brush"></i>
+                    <h4>Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+
+                <div class="service">
+                    <i class="icon fas fa-paint-brush"></i>
+                    <h4>Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+
+                <div class="service">
+                    <i class="icon fas fa-paint-brush"></i>
+                    <h4>Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+
+                <div class="service">
+                    <i class="icon fas fa-paint-brush"></i>
+                    <h4>Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- education -->
+    <section id="education">
+        <div class="inner-width">
+            <h1 class="section-title">Education & Experiences</h1>
+            <div class="time-line">
+                <div class="block">
+                    <h4>2018 - 2019</h4>
+                    <h3>Studied at VanLang University</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores rem harum, voluptates
+                        reprehenderit in veritatis vel saepe similique illum deleniti delectus odit magni dolorem
+                        voluptas. Ipsam numquam doloribus quis quibusdam.</p>
+                </div>
+
+                <div class="block">
+                    <h4>2018 - 2019</h4>
+                    <h3>Studied at VanLang University</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores rem harum, voluptates
+                        reprehenderit in veritatis vel saepe similique illum deleniti delectus odit magni dolorem
+                        voluptas. Ipsam numquam doloribus quis quibusdam.</p>
+                </div>
+
+                <div class="block">
+                    <h4>2018 - 2019</h4>
+                    <h3>Studied at VanLang University</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores rem harum, voluptates
+                        reprehenderit in veritatis vel saepe similique illum deleniti delectus odit magni dolorem
+                        voluptas. Ipsam numquam doloribus quis quibusdam.</p>
+                </div>
+
+                <div class="block">
+                    <h4>2018 - 2019</h4>
+                    <h3>Studied at VanLang University</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores rem harum, voluptates
+                        reprehenderit in veritatis vel saepe similique illum deleniti delectus odit magni dolorem
+                        voluptas. Ipsam numquam doloribus quis quibusdam.</p>
+                </div>
+
+                <div class="block">
+                    <h4>2018 - 2019</h4>
+                    <h3>Studied at VanLang University</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores rem harum, voluptates
+                        reprehenderit in veritatis vel saepe similique illum deleniti delectus odit magni dolorem
+                        voluptas. Ipsam numquam doloribus quis quibusdam.</p>
+                </div>
+
+                <div class="block">
+                    <h4>2018 - 2019</h4>
+                    <h3>Studied at VanLang University</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores rem harum, voluptates
+                        reprehenderit in veritatis vel saepe similique illum deleniti delectus odit magni dolorem
+                        voluptas. Ipsam numquam doloribus quis quibusdam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--work-->
+    <section id="work" class="dark">
+        <div class="inner-width">
+            <h1 class="section-title">Works</h1>
+            <div class="works">
+                <a href="{{ url_for('static', filename='images/vl1.jpg')}}" class="work">
+                    <img src="{{url_for('static', filename='images/vl1.jpg')}}" alt="">
+                    <div class="info">
+                        <h3>VanLang University</h3>
+                        <div class="cat">Pool</div>
+                    </div>
+                </a>
+
+                <a href="{{ url_for('static', filename='images/vl2.jpg')}}" class="work">
+                    <img src="{{url_for('static', filename='images/vl2.jpg')}}" alt="">
+                    <div class="info">
+                        <h3>VanLang University</h3>
+                        <div class="cat">Campus</div>
+                    </div>
+                </a>
+                <a href="{{ url_for('static', filename='images/vl7.jpg')}}" class="work">
+                    <img src="{{url_for('static', filename='images/vl7.jpg')}}" alt="">
+                    <div class="info">
+                        <h3>VanLang University</h3>
+                        <div class="cat">Building A</div>
+                    </div>
+                </a>
+                <a href="{{ url_for('static', filename='images/vl4.jpg')}}" class="work">
+                    <img src="{{url_for('static', filename='images/vl4.jpg')}}" alt="">
+                    <div class="info">
+                        <h3>VanLang University</h3>
+                        <div class="cat">Library</div>
+                    </div>
+                </a>
+                <a href="{{ url_for('static', filename='images/vl5.jpg')}}" class="work">
+                    <img src="{{url_for('static', filename='images/vl5.jpg')}}" alt="">
+                    <div class="info">
+                        <h3>VanLang University</h3>
+                        <div class="cat">Building C</div>
+                    </div>
+                </a>
+                <a href="{{ url_for('static', filename='images/vl6.jpg')}}" class="work">
+                    <img src="{{url_for('static', filename='images/vl6.jpg')}}" alt="">
+                    <div class="info">
+                        <h3>VanLang University</h3>
+                        <div class="cat">Trinh Cong Son Hall</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="inner-width">
+            <h1 class="section-title">Get In Touch</h1>
+            <div class="contact-info">
+                <div class="item">
+                    <i class="fas fa-mobile-alt"></i>
+                    +84 982742***
+                </div>
+
+                <div class="item">
+                    <i class="fas fa-envelope"></i>
+                    khanhsodeep2018@gmail.com
+                </div>
+
+                <div class="item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    HoChiMinh City, SGN
+                </div>
+
+
+            </div>
+            <form action="https://formspree.io/f/xzbyvgly" method="POST" id="my-form">
+                <div class="contact-form">
+                    <input type="text" class="nameZone" id="fullName" name="name" placeholder="Your Full Name" required>
+                    <input type="email" class="emailZone" id="yourMail" name="email" placeholder="Your Email" required>
+                    <input type="text" class="subjectZone" id="yourSubject" name="subject" placeholder="Subject"
+                        required>
+                    <textarea class="messageZone" id="yourMessage" name="message" placeholder="Message"
+                        required></textarea>
+                    <input type="submit" value="Send Message" class="btn" id="submit">
+                </div>
+            </form>
+        </div>
+        <div id="status"></div>
+        <script src="{{ url_for('static', filename='js/submitContact.js')}}"></script>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="inner-width">
+            <div class="copyright">
+                &copy; 2021 | Created & Design By <a href="#">Khanhsodeep</a>
+            </div>
+            <div class="sm">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin-in"></a>
+                <a href="#" class="fab fa-youtube"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- go top btn -->
+    <button class="goTop fas fa-arrow-up"></button>
+</body>
+
+</html>
