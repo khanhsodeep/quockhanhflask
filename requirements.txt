@@ -1,9 +1,3 @@
 gunicorn==20.1.0
 Flask
 MySQL
-request
-session
-redirect
-url_for
-MySQLdb.cursors
-re
